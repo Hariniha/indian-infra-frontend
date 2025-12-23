@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DPPassport - Blockchain Construction Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .text-accent-orange { color: #E67E22; }
+        .bg-accent-orange { background-color: #E67E22; }
+        .border-accent-orange { border-color: #E67E22; }
+        .hover\:bg-accent-orange-dark:hover { background-color: #D35400; }
+        .hover\:border-accent-orange:hover { border-color: #E67E22; }
+        .hover\:text-accent-orange:hover { color: #E67E22; }
+        
+        .text-dark-text { color: #1A1F2E; }
+        .bg-dark-text { background-color: #1A1F2E; }
+        
+        .text-steel-gray { color: #6B7280; }
+        .bg-steel-gray { background-color: #6B7280; }
+        .border-steel-gray { border-color: #6B7280; }
+        .hover\:text-dark-text:hover { color: #1A1F2E; }
+        
+        .bg-bg-gray { background-color: #F8F9FA; }
+        .hover\:bg-white:hover { background-color: #FFFFFF; }
+        
+        .border-border-gray { border-color: #E5E7EB; }
+        .border-white\/10 { border-color: rgba(255, 255, 255, 0.1); }
+        
+        .text-success-green { color: #10B981; }
+        
+        .bg-dark-bg { background-color: #2D3748; }
+        
+        .shadow-accent-orange\/30 { box-shadow: 0 4px 16px rgba(230, 126, 34, 0.3); }
+        .shadow-accent-orange\/40 { box-shadow: 0 8px 32px rgba(230, 126, 34, 0.4); }
+        
+        .from-accent-orange { 
+          --tw-gradient-from: #E67E22 var(--tw-gradient-from-position);
+          --tw-gradient-to: rgb(230 126 34 / 0) var(--tw-gradient-to-position);
+          --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+        .to-accent-orange-dark { 
+          --tw-gradient-to: #D35400 var(--tw-gradient-to-position);
+        }
+        .from-accent-orange\/10 { 
+          --tw-gradient-from: rgba(230, 126, 34, 0.1) var(--tw-gradient-from-position);
+          --tw-gradient-to: rgb(230 126 34 / 0) var(--tw-gradient-to-position);
+          --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+        .to-accent-orange-dark\/10 { 
+          --tw-gradient-to: rgba(211, 84, 0, 0.1) var(--tw-gradient-to-position);
+        }
+        .bg-gradient-to-br {
+          background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+        }
+        .bg-gradient-to-b {
+          background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+        }
+        
+        .bg-accent-orange\/5 { background-color: rgba(230, 126, 34, 0.05); }
+        .bg-accent-orange\/10 { background-color: rgba(230, 126, 34, 0.1); }
+        
+        .text-white\/70 { color: rgba(255, 255, 255, 0.7); }
+        .text-white\/60 { color: rgba(255, 255, 255, 0.6); }
+        .bg-white\/5 { background-color: rgba(255, 255, 255, 0.05); }
+        .bg-white\/10 { background-color: rgba(255, 255, 255, 0.1); }
+        .bg-white\/80 { background-color: rgba(255, 255, 255, 0.8); }
+        .bg-white\/95 { background-color: rgba(255, 255, 255, 0.95); }
+        .hover\:bg-white\/10:hover { background-color: rgba(255, 255, 255, 0.1); }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              'xs': '375px',
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
